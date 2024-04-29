@@ -22,7 +22,7 @@ multi(4, 4);
 
 // Escribe una función que divida dos números.
 
-function division(a = 0, b=0){
+function division(a = 0, b = 0) {
     console.log(`Division ${a} / ${b} = ${a / b}`)
 }
 division(9, 3);
