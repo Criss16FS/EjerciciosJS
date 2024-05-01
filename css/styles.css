@@ -1,0 +1,120 @@
+:root {
+    --colorPrincipal: #1561f0;
+    --negro: #131313;
+    --blanco: #ffffff;
+    --gris: #86868b;
+    --negroClaro: #2b2b2b;
+
+    --fuenteHeadings: 'roboto', sans-serif;
+    --fuenteParrafos: 'roboto', sans-serif;
+}
+
+/*hacks y globales*/
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /*Hack para box model*/
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: var(--fuenteParrafos);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Tipografia */
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteHeadings);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--fuenteParrafos);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--fuenteHeadings);
+}
+
+span {
+    font-style: italic;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeadings);
+    color: var(--blanco);
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton--primario {
+    background-color: var(--colorPrincipal);
+}
+
+.boton--secundario {
+    background-color: var(--gris);
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+/* ----- Header ----- */
+
