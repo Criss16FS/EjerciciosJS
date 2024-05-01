@@ -1,3 +1,4 @@
+console.log('Ejercicios 11 - 14');
 // Escribe una función que devuelva el máximo de dos números.
 function maximo(a, b, c) {
     if (a > b) {

@@ -1,3 +1,5 @@
+console.log('Ejercicios 5 - 10');
+
 // Escribe una función que devuelva el área de un cuadrado dado su lado.
 
 function areaCuadrado(lado1, lado2) {

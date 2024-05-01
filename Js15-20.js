@@ -1,3 +1,5 @@
+console.log('Ejercicios 15 - 20');
+
 // Escribe una función que determine si un año dado es bisiesto.
 function añoBiciesto(año) {
     if (año % 4 == 0) {

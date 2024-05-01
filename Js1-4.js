@@ -1,3 +1,4 @@
+console.log('Ejercicios 1 - 4');
 // Escribe una función que sume dos números.
 
 function suma(a = 0, b = 0) {
