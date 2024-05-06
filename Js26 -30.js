@@ -40,3 +40,43 @@ function diasParaNavidad(fecha) {
 // Ejemplo de uso:
 const hoy = new Date();
 console.log(diasParaNavidad(hoy)); // Salida: número de días faltantes para Navidad
+
+
+// Escribe una función que devuelva la suma de los números pares dentro de un rango dado.
+function sumaPares(rangoInicial, rangoFinal) {
+    let suma = 0;
+    for (let i = rangoInicial; i <= rangoFinal; i++) {
+        if (i % 2 === 0) {
+            suma += i;
+        }
+    }
+    return suma;
+}
+// Ejemplo de uso:
+console.log(sumaPares(1, 10)); // Salida: 30 (2 + 4 + 6 + 8 + 10)
+
+// Escribe una función que devuelva una matriz con los números primos dentro de un rango dado
+function esPrimo(numero) {
+    if (numero <= 1) return false;
+    if (numero <= 3) return true;
+    if (numero % 2 === 0 || numero % 3 === 0) return false;
+    let divisor = 5;
+    while (divisor * divisor <= numero) {
+        if (numero % divisor === 0 || numero % (divisor + 2) === 0) return false;
+        divisor += 6;
+    }
+    return true;
+}
+
+function numerosPrimos(rangoInicial, rangoFinal) {
+    const primos = [];
+    for (let i = rangoInicial; i <= rangoFinal; i++) {
+        if (esPrimo(i)) {
+            primos.push(i);
+        }
+    }
+    return primos;
+}
+
+// Ejemplo de uso:
+console.log(numerosPrimos(1, 20)); // Salida: [2, 3, 5, 7, 11, 13, 17, 19]
