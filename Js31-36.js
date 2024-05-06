@@ -31,5 +31,20 @@ console.log(esPangrama("El veloz murciélago hindú comía feliz cardillo y kiwi
 
 
 // Escribe una función que devuelva el número de veces que aparece una palabra específica en una cadena dada.
+function contarPalabra(cadena, palabra) {
+    let palabras = cadena.toLowerCase().split(' ');
+    let contador = 0;
+    for (let i = 0; i < palabras.length; i++) {
+        if (palabras[i] === palabra.toLowerCase()) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+// Ejemplo de uso:
+console.log(contarPalabra("La casa de papel es una serie de televisión muy popular.", "la")); // Devuelve 1
+
+
 // Escribe una función que convierta un número decimal en su equivalente binario.
 // Escribe una función que devuelva la longitud de la cadena más larga en un arreglo de cadenas dado.
