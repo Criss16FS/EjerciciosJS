@@ -19,3 +19,10 @@ function fizzBuzz() {
 
 // Llamamos a la función y mostramos el resultado en la consola
 console.log(fizzBuzz());
+
+
+// Escribe una función que devuelva el número de veces que aparece una letra específica en una cadena dada.
+function contarLetra(cadena, letra) {
+    const regex = new RegExp(letra, 'gi');
+    return (cadena.match(regex) || []).length;
+}
