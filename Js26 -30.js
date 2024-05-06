@@ -26,3 +26,5 @@ function contarLetra(cadena, letra) {
     const regex = new RegExp(letra, 'gi');
     return (cadena.match(regex) || []).length;
 }
+// Ejemplo de uso:
+console.log(contarLetra("Hola mundo", "o")); // Salida: 2
