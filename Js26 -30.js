@@ -28,3 +28,15 @@ function contarLetra(cadena, letra) {
 }
 // Ejemplo de uso:
 console.log(contarLetra("Hola mundo", "o")); // Salida: 2
+
+
+// Escribe una función que devuelva el número de días que faltan para Navidad a partir de una fecha dada.
+function diasParaNavidad(fecha) {
+    const navidad = new Date(fecha.getFullYear(), 11, 25);
+    const unDia = 1000 * 60 * 60 * 24;
+    const diferencia = Math.ceil((navidad - fecha) / unDia);
+    return diferencia;
+}
+// Ejemplo de uso:
+const hoy = new Date();
+console.log(diasParaNavidad(hoy)); // Salida: número de días faltantes para Navidad
